@@ -1,5 +1,5 @@
 /* ============================================
-   OLIMAC — tokens
+   TEMPLATE — tokens
    ============================================ */
 :root{
   --ink:#131110;
@@ -66,28 +66,25 @@ h1,h2,h3,h4{
   color:var(--text-dark);
 }
 
+/* hazard strip — used once, deliberately, as a signature detail */
+.hazard-strip{
+  height:6px;
+  width:100%;
+  background: repeating-linear-gradient(-45deg, var(--orange) 0 14px, var(--yellow) 14px 28px);
+}
 
 /* ============================================
    HEADER
    ============================================ */
-
 .site-header{
-  position:fixed;      /* era sticky */
+  position:sticky;
   top:0;
-  left:0;
-  right:0;              /* fixed precisa disso pra ocupar a largura toda */
   z-index:60;
-  background:rgba(19,17,16,.35);   /* mais transparente — era rgba(23,24,26,.92) */
-  backdrop-filter:blur(6px);        /* pode diminuir o blur, opcional */
+  background:rgba(23,24,26,.92);
+  backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line-dark);
   transition:background .3s var(--ease);
 }
-
-.site-header.is-scrolled{
-  background:rgba(19,17,16,.92);
-  backdrop-filter:blur(8px);
-}
-
 .header-inner{
   display:flex;
   align-items:center;
@@ -196,16 +193,10 @@ h1,h2,h3,h4{
 .hero-scrim{
   position:absolute; inset:0;
   background:
-    linear-gradient(180deg, rgba(19,17,16,.55) 0%, rgba(19,17,16,0) 140px),  /* nova linha */
     linear-gradient(90deg, rgba(19,17,16,.94) 0%, rgba(19,17,16,.78) 38%, rgba(19,17,16,.32) 75%, rgba(19,17,16,.15) 100%),
     linear-gradient(0deg, rgba(19,17,16,.55), rgba(19,17,16,0) 45%);
 }
-
-.hero-inner{ 
-  margin-left: 13%;
-  max-width:640px;
-}
-
+.hero-inner{ display:block; max-width:640px; }
 .hero-kicker{
   display:inline-block;
   font-family:var(--font-display);
@@ -222,11 +213,6 @@ h1,h2,h3,h4{
   line-height:1.1;
   color:var(--white);
 }
-
-.hero span{
-  color: var(--yellow);
-}
-
 .hero-lead{
   margin:22px 0 32px;
   max-width:52ch;

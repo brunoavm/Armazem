@@ -3,14 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olimac — Locação de equipamentos para construção</title>
-<meta name="description" content="Olimac aluga betoneiras, andaimes, motovibradores, hidrolavadoras e mais para o seu canteiro de obras. Unidades em Recife, Ipojuca e Igarassu.">
+<title>Sua Empresa — Locação de equipamentos para construção</title>
+<meta name="description" content="Sua Empresa aluga betoneiras, andaimes, motovibradores, hidrolavadoras e mais para o seu canteiro de obras. Unidades prontas para atender sua região.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="hazard-strip" aria-hidden="true"></div>
 
 <header class="site-header" id="siteHeader">
   <div class="container header-inner">
@@ -22,7 +24,7 @@
           <circle cx="20" cy="20" r="4" fill="currentColor"/>
         </svg>
       </span>
-      <span class="brand-name">Olimac</span>
+      <span class="brand-name">Sua Empresa</span>
     </a>
 
     <nav class="main-nav" id="mainNav">
@@ -51,11 +53,11 @@
     <div class="container hero-inner">
       <div class="hero-content">
         <span class="hero-kicker">Locação de equipamentos para construção</span>
-        <h1>A OBRA NÃO PARA<br><span> POR FALTA DE EQUIPAMENTO.</span></h1>
-        <p class="hero-lead">A Olimac aluga betoneiras, andaimes, motovibradores, hidrolavadoras e ferramentas de acabamento para manter o seu canteiro em ritmo — com três unidades prontas para atender em Pernambuco.</p>
+        <h1>A obra não para<br>por falta de equipamento.</h1>
+        <p class="hero-lead">Alugamos betoneiras, andaimes, motovibradores, hidrolavadoras e ferramentas de acabamento para manter o seu canteiro em ritmo — com unidades prontas para atender a sua região.</p>
         <div class="hero-actions">
           <a href="#equipamentos" class="btn btn-primary">Ver equipamentos</a>
-          <a href="https://wa.me/5581999999999" target="_blank" rel="noopener" class="btn btn-ghost">Falar no WhatsApp</a>
+          <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn btn-ghost">Falar no WhatsApp</a>
         </div>
       </div>
     </div>
@@ -77,9 +79,9 @@
         <div class="finder-field">
           <label for="finderUnit">Retirar na unidade</label>
           <select id="finderUnit">
-            <option value="recife">Recife</option>
-            <option value="ipojuca">Ipojuca</option>
-            <option value="igarassu">Igarassu</option>
+            <option value="unidade1">Unidade 1</option>
+            <option value="unidade2">Unidade 2</option>
+            <option value="unidade3">Unidade 3</option>
           </select>
         </div>
         <button type="submit" class="btn btn-primary finder-submit">Buscar equipamento</button>
@@ -91,7 +93,7 @@
     <div class="container facts-grid">
       <div class="fact-item">
         <span class="fact-icon"><svg viewBox="0 0 48 48"><path d="M24 6 6 16v6c0 12 8 18 18 20 10-2 18-8 18-20v-6Z"/><path d="M17 24l5 5 10-11"/></svg></span>
-        <div><strong>3 unidades</strong><span>Recife, Ipojuca e Igarassu</span></div>
+        <div><strong>3 unidades</strong><span>prontas para atender sua região</span></div>
       </div>
       <div class="fact-item">
         <span class="fact-icon"><svg viewBox="0 0 48 48"><rect x="8" y="12" width="14" height="14" rx="2"/><rect x="26" y="12" width="14" height="14" rx="2"/><rect x="8" y="26" width="14" height="14" rx="2"/><rect x="26" y="26" width="14" height="14" rx="2"/></svg></span>
@@ -146,7 +148,7 @@
       <div class="equipment-grid" id="equipmentGrid">
 
         <article class="equip-card equip-card--photo" data-category="acabamento">
-          <span class="equip-photo"><img src="images/piso.jpg" alt="Alisadora de piso Olimac"></span>
+          <span class="equip-photo"><img src="images/piso.jpg" alt="Alisadora de piso"></span>
           <span class="equip-tag">Acabamento de concreto</span>
           <h3>Alisadora de Piso</h3>
           <p>Nivela e alisa lajes de concreto com acabamento uniforme.</p>
@@ -160,7 +162,7 @@
         </article>
 
         <article class="equip-card equip-card--photo" data-category="andaimes">
-          <span class="equip-photo"><img src="images/andaime.jpg" alt="Andaime fachadeiro Olimac"></span>
+          <span class="equip-photo"><img src="images/andaime.jpg" alt="Andaime fachadeiro"></span>
           <span class="equip-tag">Andaimes, escoras e acessórios</span>
           <h3>Andaime Fachadeiro</h3>
           <p>Estrutura modular para trabalhos em fachadas e alturas.</p>
@@ -174,7 +176,7 @@
         </article>
 
         <article class="equip-card equip-card--photo" data-category="andaimes">
-          <span class="equip-photo"><img src="images/andaime.jpg" alt="Andaime mini fachadeiro Olimac"></span>
+          <span class="equip-photo"><img src="images/andaime.jpg" alt="Andaime mini fachadeiro"></span>
           <span class="equip-tag">Andaimes, escoras e acessórios</span>
           <h3>Andaime Mini Fachadeiro</h3>
           <p>Versão compacta, ideal para vãos menores e áreas internas.</p>
@@ -236,7 +238,7 @@
         </article>
 
         <article class="equip-card equip-card--photo" data-category="betoneiras">
-          <span class="equip-photo"><img src="images/betoneira.jpg" alt="Betoneira Olimac"></span>
+          <span class="equip-photo"><img src="images/betoneira.jpg" alt="Betoneira"></span>
           <span class="equip-tag">Betoneiras</span>
           <h3>Betoneira 120L</h3>
           <p>Mistura ágil de concreto e argamassa para reformas e obras menores.</p>
@@ -250,7 +252,7 @@
         </article>
 
         <article class="equip-card equip-card--photo" data-category="betoneiras">
-          <span class="equip-photo"><img src="images/betoneira.jpg" alt="Betoneira Olimac BM400"></span>
+          <span class="equip-photo"><img src="images/betoneira.jpg" alt="Betoneira BM400"></span>
           <span class="equip-tag">Betoneiras</span>
           <h3>BM400 Motor Gasolina</h3>
           <p>Maior capacidade e autonomia para obras sem energia elétrica próxima.</p>
@@ -273,7 +275,7 @@
   <section class="services" id="servicos">
     <div class="container">
       <div class="section-head section-head--light">
-        <h2>O que a Olimac faz</h2>
+        <h2>O que fazemos</h2>
         <p>Quatro frentes de atendimento, sempre com equipe própria.</p>
       </div>
 
@@ -314,7 +316,7 @@
   <section class="locations" id="unidades">
     <div class="container">
       <div class="section-head">
-        <h2>Unidades em Pernambuco</h2>
+        <h2>Nossas unidades</h2>
         <p>Escolha a mais próxima da sua obra e veja os dados de contato.</p>
       </div>
 
@@ -323,54 +325,54 @@
           <svg viewBox="0 0 200 380" class="coast-svg">
             <path d="M100 10 C 70 90, 130 150, 90 220 C 60 280, 120 330, 95 370" class="coast-line"/>
           </svg>
-          <button class="loc-pin" data-loc="igarassu" style="top:10%">
-            <span class="pin-dot"></span><span class="pin-label">Igarassu</span>
+          <button class="loc-pin" data-loc="unidade3" style="top:10%">
+            <span class="pin-dot"></span><span class="pin-label">Unidade 3</span>
           </button>
-          <button class="loc-pin is-active" data-loc="recife" style="top:47%">
-            <span class="pin-dot"></span><span class="pin-label">Recife</span>
+          <button class="loc-pin is-active" data-loc="unidade1" style="top:47%">
+            <span class="pin-dot"></span><span class="pin-label">Unidade 1</span>
           </button>
-          <button class="loc-pin" data-loc="ipojuca" style="top:88%">
-            <span class="pin-dot"></span><span class="pin-label">Ipojuca</span>
+          <button class="loc-pin" data-loc="unidade2" style="top:88%">
+            <span class="pin-dot"></span><span class="pin-label">Unidade 2</span>
           </button>
         </div>
 
         <div class="locations-tabs">
           <div class="loc-tablist" role="tablist" aria-label="Selecionar unidade">
-            <button class="loc-tab" data-loc="igarassu" role="tab" aria-selected="false">Igarassu</button>
-            <button class="loc-tab is-active" data-loc="recife" role="tab" aria-selected="true">Recife</button>
-            <button class="loc-tab" data-loc="ipojuca" role="tab" aria-selected="false">Ipojuca</button>
+            <button class="loc-tab" data-loc="unidade3" role="tab" aria-selected="false">Unidade 3</button>
+            <button class="loc-tab is-active" data-loc="unidade1" role="tab" aria-selected="true">Unidade 1</button>
+            <button class="loc-tab" data-loc="unidade2" role="tab" aria-selected="false">Unidade 2</button>
           </div>
 
           <div class="loc-details">
 
-            <div class="loc-panel" data-loc="recife">
-              <h3>Unidade Recife</h3>
+            <div class="loc-panel" data-loc="unidade1">
+              <h3>Unidade 1</h3>
               <ul>
-                <li><span class="loc-label">Endereço</span><span class="loc-value">Estr. de Belém, 1316 — Campo Grande, Recife - PE, CEP 52031-000</span></li>
-                <li><span class="loc-label">Telefone</span><span class="loc-value"><a href="tel:+558134298128">(81) 3429-8128</a> · <a href="tel:+558134932451">(81) 3493-2451</a></span></li>
-                <li><span class="loc-label">E-mail</span><span class="loc-value"><a href="mailto:contato@olimac-pe.com.br">contato@olimac-pe.com.br</a></span></li>
+                <li><span class="loc-label">Endereço</span><span class="loc-value">Rua Exemplo, 123 — Bairro Central, Sua Cidade - UF, CEP 00000-000</span></li>
+                <li><span class="loc-label">Telefone</span><span class="loc-value"><a href="tel:+550000000000">(00) 0000-0000</a></span></li>
+                <li><span class="loc-label">E-mail</span><span class="loc-value"><a href="mailto:contato@suaempresa.com.br">contato@suaempresa.com.br</a></span></li>
               </ul>
-              <a href="https://www.google.com/maps/search/?api=1&query=Estr.+de+Bel%C3%A9m+1316+Campo+Grande+Recife+PE" target="_blank" rel="noopener" class="btn btn-outline">Ver rota</a>
+              <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-outline">Ver rota</a>
             </div>
 
-            <div class="loc-panel" data-loc="ipojuca" hidden>
-              <h3>Unidade Ipojuca</h3>
+            <div class="loc-panel" data-loc="unidade2" hidden>
+              <h3>Unidade 2</h3>
               <ul>
-                <li><span class="loc-label">Endereço</span><span class="loc-value">Rod. PE-60, 3000 — Centro, Ipojuca - PE, CEP 55590-000</span></li>
-                <li><span class="loc-label">Telefone</span><span class="loc-value"><a href="tel:+558135013193">(81) 3501-3193</a></span></li>
-                <li><span class="loc-label">E-mail</span><span class="loc-value"><a href="mailto:contatoexpress@olimac-pe.com.br">contatoexpress@olimac-pe.com.br</a></span></li>
+                <li><span class="loc-label">Endereço</span><span class="loc-value">Av. Exemplo, 456 — Bairro Industrial, Sua Cidade - UF, CEP 00000-000</span></li>
+                <li><span class="loc-label">Telefone</span><span class="loc-value"><a href="tel:+550000000000">(00) 0000-0000</a></span></li>
+                <li><span class="loc-label">E-mail</span><span class="loc-value"><a href="mailto:contato@suaempresa.com.br">contato@suaempresa.com.br</a></span></li>
               </ul>
-              <a href="https://www.google.com/maps/search/?api=1&query=Rod.+PE-60+3000+Centro+Ipojuca+PE" target="_blank" rel="noopener" class="btn btn-outline">Ver rota</a>
+              <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-outline">Ver rota</a>
             </div>
 
-            <div class="loc-panel" data-loc="igarassu" hidden>
-              <h3>Unidade Igarassu</h3>
+            <div class="loc-panel" data-loc="unidade3" hidden>
+              <h3>Unidade 3</h3>
               <ul>
-                <li><span class="loc-label">Endereço</span><span class="loc-value">Av. Barão de Vera Cruz, 1820 — Cruz de Rebouças, Igarassu - PE, 53625-015</span></li>
-                <li><span class="loc-label">Telefone</span><span class="loc-value"><a href="tel:+558131400471">(81) 3140-0471</a></span></li>
-                <li><span class="loc-label">E-mail</span><span class="loc-value"><a href="mailto:igarassucomercial@olimac-pe.com.br">igarassucomercial@olimac-pe.com.br</a></span></li>
+                <li><span class="loc-label">Endereço</span><span class="loc-value">Rua Exemplo, 789 — Bairro Norte, Sua Cidade - UF, CEP 00000-000</span></li>
+                <li><span class="loc-label">Telefone</span><span class="loc-value"><a href="tel:+550000000000">(00) 0000-0000</a></span></li>
+                <li><span class="loc-label">E-mail</span><span class="loc-value"><a href="mailto:contato@suaempresa.com.br">contato@suaempresa.com.br</a></span></li>
               </ul>
-              <a href="https://www.google.com/maps/search/?api=1&query=Av.+Bar%C3%A3o+de+Vera+Cruz+1820+Igarassu+PE" target="_blank" rel="noopener" class="btn btn-outline">Ver rota</a>
+              <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-outline">Ver rota</a>
             </div>
 
           </div>
@@ -381,7 +383,7 @@
 
   <!-- FAIXA PANORÂMICA -->
   <section class="panorama">
-    <img src="images/obra-drone.jpg" alt="Vista aérea de canteiro de obras atendido pela Olimac">
+    <img src="images/obra-drone.jpg" alt="Vista aérea de canteiro de obras">
     <div class="panorama-scrim"></div>
     <p class="panorama-caption">Do alicerce à entrega, o equipamento certo em cada etapa da obra.</p>
   </section>
@@ -423,7 +425,7 @@
       <div class="contact-copy">
         <h2>Vamos equipar sua obra</h2>
         <p>Preencha os dados abaixo e a gente continua a conversa no WhatsApp — ou fale direto com a unidade mais próxima.</p>
-        <a href="https://wa.me/5581999999999" target="_blank" rel="noopener" class="btn btn-ghost">Falar no WhatsApp agora</a>
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn btn-ghost">Falar no WhatsApp agora</a>
       </div>
 
       <form class="contact-form" id="contactForm">
@@ -438,9 +440,9 @@
         <div class="contact-field">
           <label for="contactUnit">Unidade preferida</label>
           <select id="contactUnit" name="unidade">
-            <option value="Recife">Recife</option>
-            <option value="Ipojuca">Ipojuca</option>
-            <option value="Igarassu">Igarassu</option>
+            <option value="Unidade 1">Unidade 1</option>
+            <option value="Unidade 2">Unidade 2</option>
+            <option value="Unidade 3">Unidade 3</option>
           </select>
         </div>
         <div class="contact-field">
@@ -457,11 +459,11 @@
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <span class="brand-name">Olimac</span>
-      <p>Locação, venda, manutenção e peças para equipamentos de construção civil, em três unidades no litoral de Pernambuco.</p>
-      <a href="https://instagram.com/olimacequipamentos" target="_blank" rel="noopener" class="social-link">
+      <span class="brand-name">Sua Empresa</span>
+      <p>Locação, venda, manutenção e peças para equipamentos de construção civil, com unidades prontas para atender sua região.</p>
+      <a href="https://instagram.com/suaempresa" target="_blank" rel="noopener" class="social-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
-        <span>@olimacequipamentos</span>
+        <span>@suaempresa</span>
       </a>
     </div>
 
@@ -475,13 +477,13 @@
 
     <div class="footer-col">
       <h4>Unidades</h4>
-      <a href="tel:+558134298128">Recife · (81) 3429-8128</a>
-      <a href="tel:+558135013193">Ipojuca · (81) 3501-3193</a>
-      <a href="tel:+558131400471">Igarassu · (81) 3140-0471</a>
+      <a href="tel:+550000000000">Unidade 1 · (00) 0000-0000</a>
+      <a href="tel:+550000000000">Unidade 2 · (00) 0000-0000</a>
+      <a href="tel:+550000000000">Unidade 3 · (00) 0000-0000</a>
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>© <span id="year"></span> Olimac. Todos os direitos reservados.</p>
+    <p>© <span id="year"></span> Sua Empresa. Todos os direitos reservados.</p>
   </div>
 </footer>
 
@@ -494,7 +496,7 @@
     <span class="equip-tag" id="modalTag"></span>
     <h3 id="modalTitle"></h3>
     <p id="modalDetail"></p>
-    <a href="https://wa.me/5581999999999" target="_blank" rel="noopener" class="btn btn-primary" id="modalCta">Solicitar orçamento</a>
+    <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="btn btn-primary" id="modalCta">Solicitar orçamento</a>
   </div>
 </div>
 

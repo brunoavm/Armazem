@@ -2,6 +2,12 @@
   "use strict";
 
   /* ============================================
+     Configuração — troque pelo número real da empresa
+     (formato: código do país + DDD + número, só dígitos)
+     ============================================ */
+  var WHATSAPP_NUMBER = "5500000000000";
+
+  /* ============================================
      Ano no rodapé
      ============================================ */
   var yearEl = document.getElementById("year");
@@ -100,7 +106,7 @@
     modalDetail.textContent = data.detail;
     modalIcon.innerHTML = data.iconHTML || "";
     modalIcon.classList.toggle("modal-icon--photo", !!data.isPhoto);
-    modalCta.href = "https://wa.me/5581999999999?text=" + encodeURIComponent("Olá! Gostaria de orçar a locação de: " + data.name);
+    modalCta.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent("Olá! Gostaria de orçar a locação de: " + data.name);
 
     lastFocused = document.activeElement;
     modal.classList.add("is-open");
@@ -214,14 +220,7 @@
       text += " Unidade preferida: " + unit + ".";
       if (message) text += " " + message;
 
-      window.open("https://wa.me/5581999999999?text=" + encodeURIComponent(text), "_blank", "noopener");
-    });
-  }
-
-  var siteHeader = document.getElementById("siteHeader");
-  if (siteHeader) {
-    window.addEventListener("scroll", function () {
-      siteHeader.classList.toggle("is-scrolled", window.scrollY > 40);
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(text), "_blank", "noopener");
     });
   }
 
